@@ -1,2 +1,2 @@
 # ConsistentHash
-Consistant Hash Lib in Golang
+Consistent Hash Lib in Golang
