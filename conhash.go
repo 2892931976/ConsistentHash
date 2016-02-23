@@ -50,7 +50,6 @@ func (ch *ConHash) NodeAdd(n_name string, vn_num uint32) {
         key = ch.NodeHash([]byte(name))
         ch.vnode_map_node[key] = n_name
         ch.hashring = append(ch.hashring, key)
-        
     }
 }
 
@@ -59,6 +58,6 @@ func (ch *ConHash) NodeRemove(n_name string) {
 }
 
 
-func (ch *ConHash) NodeLookup (n_name string) {
+func (ch *ConHash) NodeLookup(n_name string) {
 
 }
