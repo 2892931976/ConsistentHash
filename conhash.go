@@ -48,7 +48,9 @@ func (ch *ConHash) NodeAdd(n_name string, vn_num uint32) {
         name = n_name + "_" + string(i)
         fmt.Println(i, name)
         key = ch.NodeHash([]byte(name))
-
+        ch.vnode_map_node[key] = n_name
+        ch.hashring = append(ch.hashring, key)
+        
     }
 }
 
